@@ -1,0 +1,58 @@
+[
+  {
+    "name":["Components & elements",false],
+    "free": "70+", 
+    "freelancer": "400+",
+    "company": "400+"  
+  },{
+    "name":["Example pages",false],
+    "free": "7+", 
+    "freelancer": "40+",
+    "company": "40+"  
+  },{
+    "name":["Fully coded project",false],
+    "free": "yes", 
+    "freelancer": "yes",
+    "company": "yes"  
+  },{
+    "name":["Designer files",false],
+    "free": "yes", 
+    "freelancer": "yes",
+    "company": "yes"  
+  },{
+    "name":["Plugins & addons",false],
+    "free": "no", 
+    "freelancer": "yes",
+    "company": "yes"  
+  },{
+    "name":["Premium support",false],
+    "free": "no", 
+    "freelancer": "yes",
+    "company": "yes"  
+  },{
+    "name":["Team members",false],
+    "free": "no", 
+    "freelancer": "1",
+    "company": "Up to 15"  
+  },{
+    "name":["Projects",false],
+    "free": "no", 
+    "freelancer": "1",
+    "company": "Unlimited"  
+  },{
+    "name":["Documentation",false],
+    "free": "yes", 
+    "freelancer": "yes",
+    "company": "yes"  
+  },{
+    "name":["Support duration",false],
+    "free": "no", 
+    "freelancer": "12 months",
+    "company": "24 months"  
+  },{
+    "name":["Tailwind CSS version",false],
+    "free": "no", 
+    "freelancer": "25% discount at launch",
+    "company": "25% discount at launch"  
+  }
+]
