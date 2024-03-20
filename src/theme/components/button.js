@@ -20,27 +20,28 @@ export const buttonStyles = {
         }),
         primary: (props) => ({
           bg: mode(
-            "linear-gradient(15.46deg, #4A25E1 26.3%, #7B5AFF 86.4%)",
-            "linear-gradient(15.46deg, #4A25E1 26.3%, #7B5AFF 86.4%)"
+            "linear-gradient(180deg, #41C5D4 26.3%, #0CB99A 86.4%)",
+            "linear-gradient(180deg, #41C5D4 26.3%, #0CB99A 86.4%)"
           )(props),
           color: "white",
           _focus: {
             bg: mode(
-              "linear-gradient(15.46deg, #4A25E1 26.3%, #7B5AFF 86.4%)",
-              "linear-gradient(15.46deg, #4A25E1 26.3%, #7B5AFF 86.4%)"
+              "linear-gradient(180deg, #41C5D4 26.3%, #0CB99A 86.4%)",
+              "linear-gradient(180deg, #41C5D4 26.3%, #0CB99A 86.4%)"
             )(props),
           },
           _active: {
             bg: mode(
-              "linear-gradient(15.46deg, #4A25E1 26.3%, #7B5AFF 86.4%)",
-              "linear-gradient(15.46deg, #4A25E1 26.3%, #7B5AFF 86.4%)"
+              "linear-gradient(180deg, #41C5D4 26.3%, #0CB99A 86.4%)",
+              "linear-gradient(180deg, #41C5D4 26.3%, #0CB99A 86.4%)"
             )(props),
           },
           _hover: {
-            boxShadow: "0px 21px 27px -10px rgba(96, 60, 255, 0.48) !important",
+            boxShadow:
+              "0px 21px 27px -10px rgba(12, 185, 154, 0.38) !important",
             bg: mode(
-              "linear-gradient(15.46deg, #4A25E1 26.3%, #7B5AFF 86.4%)",
-              "linear-gradient(15.46deg, #4A25E1 26.3%, #7B5AFF 86.4%)"
+              "linear-gradient(180deg, #41C5D4 26.3%, #0CB99A 86.4%)",
+              "linear-gradient(180deg, #41C5D4 26.3%, #0CB99A 86.4%)"
             )(props),
           },
         }),
@@ -91,8 +92,8 @@ export const buttonStyles = {
         }),
         brand: (props) => ({
           bg: mode(
-            "linear-gradient(15.46deg, #4A25E1 26.3%, #7B5AFF 86.4%)",
-            "linear-gradient(15.46deg, #4A25E1 26.3%, #7B5AFF 86.4%)"
+            "linear-gradient(180deg, #41C5D4 26.3%, #0CB99A 86.4%)",
+            "linear-gradient(180deg, #41C5D4 26.3%, #0CB99A 86.4%)"
           )(props),
           color: "white",
           _focus: {

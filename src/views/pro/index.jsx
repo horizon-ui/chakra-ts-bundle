@@ -21,12 +21,7 @@
 import { Box, Flex } from "@chakra-ui/react";
 // Custom components
 import FAQ from "sections/pro/faq";
-import Fast from "sections/pro/fast";
-import Features from "sections/pro/features";
-import Overview from "sections/pro/overview";
 import Pricing from "sections/pro/pricing";
-import GetStarted from "sections/pro/started";
-// import Testimonials from "sections/pro/testimonials";
 
 import Associates from "sections/pro/associates";
 import Hero from "sections/pro/hero";
@@ -36,10 +31,6 @@ export default function Default() {
     <Flex direction={{ base: "column" }} overflowX="hidden">
       <Hero />
       <Associates />
-      <Fast />
-      <Features />
-      <GetStarted />
-      <Overview />
       {/* <Testimonials /> */}
       <Box id="pricing">
         <Pricing />
