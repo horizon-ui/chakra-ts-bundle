@@ -355,9 +355,9 @@ export default function Pricing(props) {
                 onClick={() =>
                   openCheckout(
                     version === "ai-chakra-ts"
-                      ? { product: 831626 }
+                      ? { product: 877595 }
                       : version === "ai-chakra-js"
-                      ? { product: 849162 }
+                      ? { product: 877595 }
                       : { product: null }
                   )
                 }
@@ -641,9 +641,9 @@ export default function Pricing(props) {
                 onClick={() =>
                   openCheckout(
                     version === "ai-chakra-ts"
-                      ? { product: 831628 }
+                      ? { product: 877596 }
                       : version === "ai-chakra-js"
-                      ? { product: 848549 }
+                      ? { product: 877596 }
                       : { product: null }
                   )
                 }
@@ -873,9 +873,9 @@ export default function Pricing(props) {
               onClick={() =>
                 openCheckout(
                   version === "ai-chakra-ts"
-                    ? { product: 831629 }
+                    ? { product: 877597 }
                     : version === "ai-chakra-js"
-                    ? { product: 849163 }
+                    ? { product: 877597 }
                     : { product: null }
                 )
               }

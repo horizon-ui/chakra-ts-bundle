@@ -168,7 +168,7 @@ export default function AdminNavbar(props) {
             me="10px"
           /> */}
           <Image
-            alt="horizon ai template - premium chatbot chatgpt react admin template logo"
+            alt="Chakra UI TS Bundle - Horizon UI Spring Sale"
             me="10px"
             w="179px"
             src={horizonuilogomain}
@@ -812,17 +812,6 @@ export default function AdminNavbar(props) {
                       <Text px="8px">{stars}</Text>
                     </Button>
                   </Link>{" "} */}
-                  <Link
-                    href="#products"
-                    color={textColor}
-                    fontSize="sm"
-                    fontWeight="600"
-                    me="18px"
-                    my="auto"
-                    letterSpacing="0px"
-                  >
-                    Discover all Products
-                  </Link>
                 </MenuItem>
                 <MenuItem
                   _hover={{ bg: "none" }}
@@ -896,17 +885,6 @@ export default function AdminNavbar(props) {
               <Text px="8px">{stars}</Text>
             </Button>
           </Link>{" "} */}
-          <Link
-            href="#products"
-            color={textColor}
-            fontSize="sm"
-            fontWeight="600"
-            me="18px"
-            my="auto"
-            letterSpacing="0px"
-          >
-            Discover all Products
-          </Link>
           <Link href="#pricing" display={{ base: "none", lg: "block" }}>
             <Button
               variant="transparent"

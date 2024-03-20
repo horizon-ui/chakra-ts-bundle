@@ -9,7 +9,7 @@ import Pro from "views/pro";
 const routes = [
   // --- Dashboards ---
   {
-    name: "Horizon AI Template",
+    name: "Chakra UI TS Bundle - Horizon UI Spring Sale",
     path: "/",
     component: Pro,
     icon: <Icon as={MdHome} width="20px" height="20px" color="inherit" />,

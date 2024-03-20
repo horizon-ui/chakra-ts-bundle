@@ -137,7 +137,7 @@ export default function Footer() {
             w="full"
           >
             <Image
-              alt="horizon ai template - premium chatbot chatgpt react admin template logo footer"
+              alt="Chakra UI TS Bundle - Horizon UI Spring Sale"
               me="10px"
               w="179px"
               src={horizonuilogomain}
@@ -151,9 +151,9 @@ export default function Footer() {
             letterSpacing="0px"
             mb="26px"
           >
-            Start building your AI SaaS Prompts apps with Horizon AI Template,
-            the trendiest ChatGPT Admin Template for React, NextJS and Chakra
-            UI!
+            Start building your SaaS products with our Chakra UI Horizon UI
+            Bundle, the trendiest Admin Template pack for React, NextJS, OpenAI
+            GPT and Chakra UI!
           </Text>
           <a
             href="https://www.producthunt.com/posts/horizon-ui?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-horizon&#0045;ui"
@@ -430,7 +430,7 @@ export default function Footer() {
           fontWeight="500"
           textColor={textColorSecondary}
         >
-          Horizon UI © 2021-2023 Copyright. All rights reserved.
+          Horizon UI © 2021-2024 Copyright. All rights reserved.
         </Text>
       </Flex>
     </Flex>
