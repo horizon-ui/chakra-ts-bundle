@@ -31,11 +31,11 @@ export default function Hero() {
       w="100%"
       direction="column"
       pt={{
-        base: "130px",
-        md: "140px",
-        xl: "190px",
+        base: "110px",
+        md: "110px",
+        xl: "110px",
         "2xl": "110px",
-        "3xl": "220px",
+        "3xl": "10px",
       }}
       position="relative"
     >
@@ -63,8 +63,8 @@ export default function Hero() {
             as="h1"
             color={textColor}
             fontWeight="700"
-            fontSize={{ base: "26px", md: "46px", lg: "50px", xl: "66px" }}
-            lineHeight={{ base: "36px", md: "56px", lg: "60px", xl: "74px" }}
+            fontSize={{ base: "36px", md: "66px", lg: "66px", xl: "66px" }}
+            lineHeight={{ base: "44px", md: "74px", lg: "74px", xl: "74px" }}
             px={{
               base: "0px",
               md: "0px",
@@ -78,11 +78,11 @@ export default function Hero() {
             <Text
               as="h1"
               fontWeight="800"
-              fontSize={{ base: "26px", md: "46px", lg: "50px", xl: "90px" }}
+              fontSize={{ base: "50px", md: "90px", lg: "90px", xl: "90px" }}
               lineHeight={{
-                base: "36px",
-                md: "56px",
-                lg: "60px",
+                base: "60px",
+                md: "90px",
+                lg: "90px",
                 xl: "90px",
               }}
               position={"relative"}
@@ -102,9 +102,9 @@ export default function Hero() {
             fontWeight={"500"}
             w={{
               base: "90%",
-              md: "90%",
-              lg: "70%",
-              xl: "84%",
+              md: "80%",
+              lg: "50%",
+              xl: "54%",
               "2xl": "55%",
             }}
           >
@@ -116,7 +116,7 @@ export default function Hero() {
             direction={{ base: "column", md: "row" }}
             justifyContent={{ base: "center", lg: "center" }}
           >
-            <Link href="#offers">
+            <Link href="#pricing">
               <Button
                 variant="primary"
                 py="20px"
@@ -132,7 +132,7 @@ export default function Hero() {
                 <Icon as={MdChevronRight} color="white" h="16px" w="16px" />
               </Button>
             </Link>
-            <Link href="#">
+            <Link href="#products">
               <Button
                 bg="transparent"
                 variant="transparent"

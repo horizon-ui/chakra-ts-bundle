@@ -12,6 +12,8 @@ import {
 // Custom components
 import Card from "components/card/Card";
 
+import ribbon from "assets/img/pro/pricing/ribbon.png";
+
 import { VSeparator } from "components/separator/Separator";
 import IconBox from "components/icons/IconBox";
 import { Cubes, Copy, Contact, InfinityIcon } from "components/icons/Icons";
@@ -129,7 +131,7 @@ export default function Pricing(props) {
               textAlign={{ base: "center", lg: "center" }}
               color={textColor}
               fontWeight="800"
-              fontSize={{ base: "30px", md: "48px", lg: "48px", xl: "58px" }}
+              fontSize={{ base: "36px", md: "48px", lg: "48px", xl: "58px" }}
               lineHeight={{ base: "38px", md: "60px", lg: "60px", xl: "70px" }}
               w={{ base: "100%", md: "100%", lg: "70%", xl: "60%" }}
             >
@@ -172,178 +174,28 @@ export default function Pricing(props) {
               </Text>{" "}
               for you and your business
             </Text>
+            <Image
+              src={ribbon}
+              w={{ base: "80px", md: "130px" }}
+              h={{ base: "80px", md: "130px" }}
+              right={{
+                base: "4px",
+                md: "20px",
+                lg: "150px",
+                xl: "310px",
+                "2xl": "450px",
+              }}
+              top={{
+                base: "190px",
+                md: "166px",
+                lg: "170px",
+                xl: "224px",
+                "2xl": "224px",
+              }}
+              position="absolute"
+            />
           </Flex>
-          {/* Toggle */}
-          {/* <Flex
-            w="max-content"
-            bg="white"
-            boxShadow="14px 27px 45px rgba(112, 144, 176, 0.18)"
-            borderRadius="16px"
-            p={{ base: "12px", md: "28px" }}
-            flexDirection="column"
-            mt="20px"
-            mx={{ base: "auto" }}
-          >
-            <Flex
-              zIndex="1"
-              w="max-content"
-              flexDirection={{ base: "column", lg: "row" }}
-              align="center"
-              position="relative"
-            >
-              <Box
-                transitionDuration="0.25s"
-                transitionProperty="all"
-                transitionTimingFunction="linear"
-              >
-                <Card
-                  bg={version === "ai-chakra-ts" ? "white" : "transparent"}
-                  boxShadow={
-                    version === "ai-chakra-ts"
-                      ? "14px 27px 45px rgba(112, 144, 176, 0.18)"
-                      : "none"
-                  }
-                  flexDirection={{ base: "column", md: "row" }}
-                  alignItems="center"
-                  justifyContent="center"
-                  onClick={() => setVersion("ai-chakra-ts")}
-                  transitionDuration="0.2s"
-                  p="18px"
-                  fontWeight="700"
-                  zIndex="2"
-                  borderRadius="14px"
-                >
-                  <Flex justifyContent="center" alignItems="center">
-                    {" "}
-                    <Image
-                      me="14px"
-                      w="34px"
-                      h="34px"
-                      src={ReactJS}
-                      alt="reactjs logo"
-                    />
-                    <Image me="14px" w="18px" h="18px" src={Plus} />
-                    <Image
-                      me="14px"
-                      w="34px"
-                      h="34px"
-                      src={NextJS}
-                      alt="nextjs logo"
-                    />
-                    <Image me="14px" w="18px" h="18px" src={Plus} />
-                    <Image
-                      me="14px"
-                      w="34px"
-                      h="34px"
-                      src={ChakraUI}
-                      alt="chakra ui logo"
-                    />
-                    <Image me="14px" w="18px" h="18px" src={Plus} />
-                    <Image
-                      me={{ base: "0px", md: "14px" }}
-                      w="34px"
-                      h="34px"
-                      src={Typescript}
-                      alt="typescript logo"
-                    />
-                  </Flex>
-                  <Text
-                    fontSize="lg"
-                    mt={{ base: "14px", md: "0px" }}
-                    color={textColor}
-                  >
-                    React + NextJS + Chakra UI + TS
-                  </Text>
-                </Card>
-              </Box>
-            </Flex>
-            <Flex
-              zIndex="1"
-              w="max-content"
-              flexDirection={{ base: "column", lg: "row" }}
-              align="center"
-              position="relative"
-              mt="10px"
-            >
-              <Box
-                transitionDuration="0.25s"
-                transitionProperty="all"
-                transitionTimingFunction="linear"
-              >
-                <Card
-                  bg={version === "ai-chakra-js" ? "white" : "transparent"}
-                  boxShadow={
-                    version === "ai-chakra-js"
-                      ? "14px 27px 45px rgba(112, 144, 176, 0.18)"
-                      : "none"
-                  }
-                  flexDirection={{ base: "column", md: "row" }}
-                  alignItems="center"
-                  justifyContent="center"
-                  onClick={() => setVersion("ai-chakra-js")}
-                  transitionDuration="0.2s"
-                  p="18px"
-                  fontWeight="700"
-                  zIndex="2"
-                  borderRadius="14px"
-                >
-                  <Flex justifyContent="center" alignItems="center">
-                    {" "}
-                    <Image
-                      me="14px"
-                      w="34px"
-                      h="34px"
-                      src={ReactJS}
-                      alt="reactjs logo"
-                    />
-                    <Image me="14px" w="18px" h="18px" src={Plus} />
-                    <Image
-                      me="14px"
-                      w="34px"
-                      h="34px"
-                      src={NextJS}
-                      alt="nextjs logo"
-                    />
-                    <Image me="14px" w="18px" h="18px" src={Plus} />
-                    <Image
-                      me="14px"
-                      w="34px"
-                      h="34px"
-                      src={ChakraUI}
-                      alt="chakra ui logo"
-                    />
-                    <Image me="14px" w="18px" h="18px" src={Plus} />
-                    <Image
-                      me={{ base: "0px", md: "14px" }}
-                      w="34px"
-                      h="34px"
-                      src={Javascript}
-                      alt="javascript logo"
-                    />
-                  </Flex>
-                  <Text
-                    fontSize="lg"
-                    mt={{ base: "14px", md: "0px" }}
-                    color={textColor}
-                  >
-                    React + NextJS + Chakra UI + JS
-                  </Text>
-                </Card>
-              </Box>
-            </Flex>
-          </Flex> */}
         </Flex>
-        {/* <Text
-          fontSize={"sm"}
-          textAlign="center"
-          fontWeight="500"
-          color="gray.600"
-          letterSpacing="0px"
-          mb="34px"
-        >
-          👆🏻 Before purchasing, please make sure you selected the correct
-          technology/framework you want to get.
-        </Text> */}
         <SimpleGrid
           w="100%"
           columns={{ base: "1", lg: "2" }}
@@ -403,7 +255,7 @@ export default function Pricing(props) {
                   letterSpacing="0px"
                 >
                   A recommended single license for solo designers & developers
-                  building high-end AI projects & applications.
+                  building high-end projects & applications.
                 </Text>
               </Box>
             </Flex>
@@ -427,9 +279,7 @@ export default function Pricing(props) {
                     fontWeight="extrabold"
                     me="8px"
                   >
-                    {version !== "nextchakra" && version !== "tailwindnext"
-                      ? "$49"
-                      : "$59"}
+                    $199
                   </Text>
                   <VSeparator
                     display={{
@@ -448,20 +298,15 @@ export default function Pricing(props) {
                       fontWeight="500"
                       letterSpacing="0px"
                     >
-                      reg.{" "}
-                      {version !== "nextchakra" && version !== "tailwindnext"
-                        ? "$79"
-                        : "$79"}
+                      reg. $398
                     </Text>
                     <Text
                       color="green.500"
-                      fontWeight="500"
-                      fontSize="md"
+                      fontWeight="600"
+                      fontSize="sm"
                       letterSpacing="0px"
                     >
-                      {version !== "nextchakra" && version !== "tailwindnext"
-                        ? "-38% discount"
-                        : "-38% discount"}
+                      -50% discount
                     </Text>
                   </Flex>
                 </Flex>
@@ -531,7 +376,7 @@ export default function Pricing(props) {
                 letterSpacing="0px"
                 alignItems="center"
               >
-                Get started now with Horizon AI
+                Get started now with Personal
                 <Icon as={MdChevronRight} mt="2px" />
               </Button>
               <Text
@@ -567,7 +412,7 @@ export default function Pricing(props) {
                     color={textColor}
                     letterSpacing="0px"
                   >
-                    100+ Components / elements
+                    900+ Components / elements
                   </Text>
                   — dark/light individual elements, like buttons, inputs,
                   navbars, cards, alerts, and so on... giving you the freedom of
@@ -599,8 +444,8 @@ export default function Pricing(props) {
                   >
                     12 Months premium support{" "}
                   </Text>{" "}
-                  — premium support with high priority for any problems with
-                  Horizon AI Template, via Discord or contact mail.
+                  — premium support with high priority for any problems with our
+                  products, via Discord or contact mail.
                 </Text>
               </Box>
             </Flex>
@@ -681,7 +526,7 @@ export default function Pricing(props) {
                   letterSpacing="0px"
                 >
                   Perfect license for designers and developers teams working on
-                  company-level AI projects & applications.
+                  company-level projects & applications.
                 </Text>
               </Box>
             </Flex>
@@ -717,8 +562,7 @@ export default function Pricing(props) {
                     letterSpacing="0px"
                     me="8px"
                   >
-                    {/* {version !== "nextjs" ? "$189" : "$229"} */}
-                    $89
+                    $499
                   </Text>
 
                   <VSeparator
@@ -739,15 +583,16 @@ export default function Pricing(props) {
                       fontWeight="500"
                     >
                       {/* reg. {version !== "nextjs" ? "$790" : "$790"} */}
-                      reg. $189
+                      reg. $1025
                     </Text>
                     <Text
                       color="green.500"
-                      fontWeight="500"
+                      fontWeight="600"
+                      fontSize="sm"
                       letterSpacing="0px"
                     >
                       {/* {version !== "nextjs" ? "-72% discount" : "-72% discount"} */}
-                      -53% discount!
+                      -52% discount!
                     </Text>
                   </Flex>
                 </Flex>
@@ -879,8 +724,8 @@ export default function Pricing(props) {
                   >
                     24 Months premium support{" "}
                   </Text>{" "}
-                  — premium support with high priority for any problems with
-                  Horizon AI Template, via Discord or contact mail.
+                  — premium support with high priority for any problems with our
+                  products, via Discord or contact mail.
                 </Text>
               </Box>
             </Flex>
@@ -909,7 +754,7 @@ export default function Pricing(props) {
                     Unlimited projects
                   </Text>{" "}
                   — create as much projects you want with your team/company
-                  based on Horizon AI Template.
+                  based on our products.
                 </Text>
               </Box>
             </Flex>
@@ -963,9 +808,7 @@ export default function Pricing(props) {
                   fontWeight="800"
                   letterSpacing="0px"
                 >
-                  {version !== "nextchakra" && version !== "tailwindnext"
-                    ? "$139"
-                    : "$159"}
+                  $699
                 </Text>
                 <Flex justify="center" direction="column">
                   <Text
@@ -975,21 +818,16 @@ export default function Pricing(props) {
                     color={textColor}
                     letterSpacing="0px"
                   >
-                    reg.{" "}
-                    {version !== "nextchakra" && version !== "tailwindnext"
-                      ? "$249"
-                      : "$289"}
+                    reg. $1324
                   </Text>
                   <Text
                     w="max-content"
-                    fontSize="md"
-                    fontWeight="500"
+                    fontWeight="600"
+                    fontSize="sm"
                     letterSpacing="0px"
                     color="green.500"
                   >
-                    {version !== "nextchakra" && version !== "tailwindnext"
-                      ? "-45% discount"
-                      : "-45% discount"}
+                    -48% discount
                   </Text>
                 </Flex>
               </Flex>
@@ -1016,7 +854,7 @@ export default function Pricing(props) {
               >
                 Relevant for large-scale uses and extended redistribution
                 rights. A license for large companies working on
-                enterprise-level AI projects.
+                enterprise-level projects.
               </Text>
             </Box>
             <Button

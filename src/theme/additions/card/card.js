@@ -10,7 +10,7 @@ const Card = {
       "14px 17px 40px 4px rgba(112, 144, 176, 0.08)",
       "unset"
     )(props),
-    borderRadius: "30px",
+    borderRadius: "20px",
     minWidth: "0px",
     wordWrap: "break-word",
     bg: mode("#ffffff", "#1C1F39")(props),

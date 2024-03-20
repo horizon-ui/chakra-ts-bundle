@@ -175,19 +175,6 @@ export default function AdminNavbar(props) {
           />
         </Link>
         <Flex>
-          <Link
-            display={{ base: "none", lg: "block" }}
-            href="https://horizon-ui.com/docs-ai-template/docs/introduction"
-            color="gray.600"
-            fontSize="sm"
-            fontWeight="500"
-            letterSpacing="0px"
-            me="30px"
-            my="auto"
-          >
-            Documentation
-          </Link>
-
           <Menu>
             <MenuButton
               display={{ base: "none", lg: "flex" }}
@@ -204,7 +191,7 @@ export default function AdminNavbar(props) {
                 me="20px"
                 my="auto"
               >
-                Admin Template
+                All Offers
                 <Icon ms="6px" as={IoChevronDown} />
               </Text>
             </MenuButton>
@@ -224,7 +211,7 @@ export default function AdminNavbar(props) {
                   px="14px"
                 >
                   <Link
-                    href="https://horizon-ui.com"
+                    href="https://horizon-ui.com/chakra-ts-bundle"
                     color="gray.600"
                     fontSize="sm"
                     fontWeight="500"
@@ -232,7 +219,7 @@ export default function AdminNavbar(props) {
                     me="10px"
                     my="auto"
                   >
-                    Horizon UI Free
+                    Chakra UI TS Bundle
                   </Link>
                 </MenuItem>
                 <MenuItem
@@ -243,15 +230,53 @@ export default function AdminNavbar(props) {
                   px="14px"
                 >
                   <Link
-                    href="https://horizon-ui.com/pro"
+                    href="https://horizon-ui.com/chakra-js-bundle"
                     color="gray.600"
                     fontSize="sm"
-                    isExternal="true"
                     fontWeight="500"
+                    isExternal="true"
                     me="10px"
                     my="auto"
                   >
-                    Horizon UI PRO
+                    Chakra UI JS Bundle
+                  </Link>
+                </MenuItem>
+                <MenuItem
+                  _hover={{ bg: "#EDF2F7" }}
+                  transition="0.1s linear"
+                  _focus={{ bg: "none" }}
+                  borderRadius="8px"
+                  px="14px"
+                >
+                  <Link
+                    href="https://horizon-ui.com/tailwind-ts-bundle"
+                    color="gray.600"
+                    fontSize="sm"
+                    fontWeight="500"
+                    isExternal="true"
+                    me="10px"
+                    my="auto"
+                  >
+                    Tailwind CSS TS Bundle
+                  </Link>
+                </MenuItem>
+                <MenuItem
+                  _hover={{ bg: "#EDF2F7" }}
+                  transition="0.1s linear"
+                  _focus={{ bg: "none" }}
+                  borderRadius="8px"
+                  px="14px"
+                >
+                  <Link
+                    href="https://horizon-ui.com/tailwind-js-bundle"
+                    color="gray.600"
+                    fontSize="sm"
+                    fontWeight="500"
+                    isExternal="true"
+                    me="10px"
+                    my="auto"
+                  >
+                    Tailwind CSS JS Bundle
                   </Link>
                 </MenuItem>
               </Flex>
@@ -460,23 +485,6 @@ export default function AdminNavbar(props) {
               bg={menuBg}
             >
               <Flex flexDirection="column" p="10px">
-                <MenuItem
-                  _hover={{ bg: "none" }}
-                  _focus={{ bg: "none" }}
-                  borderRadius="8px"
-                  px="14px"
-                >
-                  <Link
-                    href="https://horizon-ui.com/docs-ai-template/docs/introduction"
-                    color="gray.600"
-                    fontSize="sm"
-                    fontWeight="500"
-                    me="30px"
-                    my="auto"
-                  >
-                    Documentation
-                  </Link>
-                </MenuItem>
                 <Accordion allowMultiple>
                   <AccordionItem border="0px" p="0px">
                     <AccordionButton
@@ -500,7 +508,7 @@ export default function AdminNavbar(props) {
                         fontWeight="500"
                         textAlign={"start"}
                       >
-                        Admin Template
+                        All Offers
                         <Icon ms="8px" as={IoChevronDown} />
                       </Text>
                     </AccordionButton>
@@ -514,13 +522,13 @@ export default function AdminNavbar(props) {
                             px="14px"
                           >
                             <Link
-                              href="https://horizon-ui.com"
+                              href="https://horizon-ui.com/chakra-ts-bundle"
                               color="gray.600"
                               fontSize="sm"
                               fontWeight="500"
                               my="auto"
                             >
-                              Horizon UI Free
+                              Chakra UI TS Bundle
                             </Link>
                           </MenuItem>
                         </ListItem>
@@ -532,13 +540,49 @@ export default function AdminNavbar(props) {
                             px="14px"
                           >
                             <Link
-                              href="https://horizon-ui.com/pro"
+                              href="https://horizon-ui.com/chakra-js-bundle"
                               color="gray.600"
                               fontSize="sm"
                               fontWeight="500"
                               my="auto"
                             >
-                              Horizon UI PRO
+                              Chakra UI JS Bundle
+                            </Link>
+                          </MenuItem>
+                        </ListItem>
+                        <ListItem>
+                          <MenuItem
+                            _hover={{ bg: "none" }}
+                            _focus={{ bg: "none" }}
+                            borderRadius="8px"
+                            px="14px"
+                          >
+                            <Link
+                              href="https://horizon-ui.com/tailwind-ts-bundle"
+                              color="gray.600"
+                              fontSize="sm"
+                              fontWeight="500"
+                              my="auto"
+                            >
+                              Tailwind CSS TS Bundle
+                            </Link>
+                          </MenuItem>
+                        </ListItem>
+                        <ListItem>
+                          <MenuItem
+                            _hover={{ bg: "none" }}
+                            _focus={{ bg: "none" }}
+                            borderRadius="8px"
+                            px="14px"
+                          >
+                            <Link
+                              href="https://horizon-ui.com/tailwind-js-bundle"
+                              color="gray.600"
+                              fontSize="sm"
+                              fontWeight="500"
+                              my="auto"
+                            >
+                              Tailwind CSS JS Bundle
                             </Link>
                           </MenuItem>
                         </ListItem>
@@ -769,16 +813,15 @@ export default function AdminNavbar(props) {
                     </Button>
                   </Link>{" "} */}
                   <Link
-                    isExternal
-                    href="https://horizon-ui.com/horizon-ai-template"
-                    color="gray.600"
+                    href="#products"
+                    color={textColor}
                     fontSize="sm"
-                    fontWeight="500"
+                    fontWeight="600"
                     me="18px"
                     my="auto"
                     letterSpacing="0px"
                   >
-                    Live Preview
+                    Discover all Products
                   </Link>
                 </MenuItem>
                 <MenuItem
@@ -797,7 +840,7 @@ export default function AdminNavbar(props) {
                       bg="transparent"
                       my="auto"
                     >
-                      Get started now
+                      Grab the Bundle now
                       <Icon
                         as={MdChevronRight}
                         ms="5px"
@@ -854,16 +897,15 @@ export default function AdminNavbar(props) {
             </Button>
           </Link>{" "} */}
           <Link
-            isExternal
-            href="https://horizon-ui.com/horizon-ai-template"
-            color="gray.600"
+            href="#products"
+            color={textColor}
             fontSize="sm"
-            fontWeight="500"
+            fontWeight="600"
             me="18px"
             my="auto"
             letterSpacing="0px"
           >
-            Live Preview
+            Discover all Products
           </Link>
           <Link href="#pricing" display={{ base: "none", lg: "block" }}>
             <Button
@@ -878,7 +920,7 @@ export default function AdminNavbar(props) {
               bg="transparent"
               my="auto"
             >
-              Get started now
+              Grab the Bundle now
               <Icon as={MdChevronRight} ms="5px" mt="2px" h="16px" w="16px" />
             </Button>
           </Link>
