@@ -133,7 +133,7 @@ export default function Footer() {
             mb="20px"
             display={"flex"}
             alignItems="center"
-            href="/ai-template"
+            href="/chakra-ts-bundle"
             w="full"
           >
             <Image
@@ -142,18 +142,6 @@ export default function Footer() {
               w="179px"
               src={horizonuilogomain}
             />
-            <Badge
-              colorScheme="brand"
-              borderRadius="25px"
-              color="brand.500"
-              textTransform={"none"}
-              letterSpacing="0px"
-              px="8px"
-              pt="4px"
-              pb="5px"
-            >
-              AI Template
-            </Badge>
           </Link>
           <Text
             lineHeight="180%"

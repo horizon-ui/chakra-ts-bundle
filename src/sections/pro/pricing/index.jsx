@@ -1,23 +1,3 @@
-/*!
-  _   _  ___  ____  ___ ________  _   _      _    ___   _____ _____ __  __ ____  _        _  _____ _____ 
- | | | |/ _ \|  _ \|_ _|__  / _ \| \ | |    / \  |_ _| |_   _| ____|  \/  |  _ \| |      / \|_   _| ____|
- | |_| | | | | |_) || |  / / | | |  \| |   / _ \  | |    | | |  _| | |\/| | |_) | |     / _ \ | | |  _|  
- |  _  | |_| |  _ < | | / /| |_| | |\  |  / ___ \ | |    | | | |___| |  | |  __/| |___ / ___ \| | | |___ 
- |_| |_|\___/|_| \_\___/____\___/|_| \_| /_/   \_\___|   |_| |_____|_|  |_|_|   |_____/_/   \_\_| |_____|                                                                                                
-                                                                                                                                                                                                                                                                                                                                       
-=========================================================
-* Horizon AI Template - v1.0.0
-=========================================================
-
-* Product Page: https://www.horizon-ui.com/ai-template/
-* Copyright 2023 Horizon UI (https://www.horizon-ui.com/)
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-
 // Chakra imports
 import {
   Box,
@@ -27,17 +7,8 @@ import {
   Image,
   SimpleGrid,
   Text,
-  Link,
   useColorModeValue,
 } from "@chakra-ui/react";
-// Assets
-// import bgDark from "assets/img/pro/features/bgDark.png";
-import Typescript from "assets/img/pro/pricing/Typescript.png";
-import ReactJS from "assets/img/pro/pricing/React.png";
-import NextJS from "assets/img/pro/pricing/NextJS.png";
-import ChakraUI from "assets/img/pro/pricing/ChakraUI.png";
-import Plus from "assets/img/pro/pricing/Plus.png";
-import Javascript from "assets/img/pro/pricing/Javascript.png";
 // Custom components
 import Card from "components/card/Card";
 
@@ -46,14 +17,8 @@ import IconBox from "components/icons/IconBox";
 import { Cubes, Copy, Contact, InfinityIcon } from "components/icons/Icons";
 import InnerContent from "layouts/innerContent";
 import React, { useEffect, useState } from "react";
-import {
-  MdChevronRight,
-  MdPerson,
-  MdGroup,
-  MdStarOutline,
-} from "react-icons/md";
+import { MdChevronRight, MdPerson, MdGroup } from "react-icons/md";
 import { TextLine } from "components/icons/Icons";
-import TechCard from "./components/TechCard";
 
 function formatNumber(number, decPlaces) {
   decPlaces = Math.pow(10, decPlaces);
@@ -66,7 +31,7 @@ function formatNumber(number, decPlaces) {
     if (size <= number) {
       number = Math.round((number * decPlaces) / size) / decPlaces;
 
-      if (number == 1000 && i < abbrev.length - 1) {
+      if (number === 1000 && i < abbrev.length - 1) {
         number = 1;
         i++;
       }
@@ -123,11 +88,11 @@ export default function Pricing(props) {
   return (
     <Flex
       id="pricing"
-      bgSize="cover"
       w="100%"
+      bg="linear-gradient(180deg, #F8FAFC 0%, rgba(255, 255, 255, 0.00) 47.33%)"
       px="20px"
       direction={{ base: "column" }}
-      pt={{ base: "30px", md: "40px", xl: "80px" }}
+      pt={{ base: "100px", md: "100px", xl: "140px" }}
       pb={{ base: "100px", md: "100px", xl: "140px" }}
       overflow="hidden"
       position="relative"
@@ -209,7 +174,7 @@ export default function Pricing(props) {
             </Text>
           </Flex>
           {/* Toggle */}
-          <Flex
+          {/* <Flex
             w="max-content"
             bg="white"
             boxShadow="14px 27px 45px rgba(112, 144, 176, 0.18)"
@@ -366,9 +331,9 @@ export default function Pricing(props) {
                 </Card>
               </Box>
             </Flex>
-          </Flex>
+          </Flex> */}
         </Flex>
-        <Text
+        {/* <Text
           fontSize={"sm"}
           textAlign="center"
           fontWeight="500"
@@ -378,132 +343,7 @@ export default function Pricing(props) {
         >
           👆🏻 Before purchasing, please make sure you selected the correct
           technology/framework you want to get.
-        </Text>
-        <Card
-          boxShadow="none"
-          borderRadius="16px"
-          border="1px"
-          bg="transparent"
-          borderColor="gray.300"
-          alignItems={{ base: "start", lg: "center" }}
-          flexDirection={{ base: "column", lg: "column" }}
-          p={{ base: "16px", md: "32px" }}
-          mb="30px"
-          maxW={{ base: "100%", md: "565px", lg: "100%" }}
-        >
-          <Flex
-            alignItems={{ base: "start", lg: "center" }}
-            flexDirection={{ base: "column", lg: "row" }}
-            justifyContent="space-between"
-            w="100%"
-          >
-            <Box
-              maxW={{ base: "100%", md: "100%", lg: "120px", "3xl": "120px" }}
-              me={{ base: "20px", xl: "40px" }}
-            >
-              <Box
-                display="flex"
-                flexDirection={{ base: "column", md: "row" }}
-                alignItems={{ base: "start", md: "center" }}
-              >
-                <Text
-                  letterSpacing="0px"
-                  fontSize="sm"
-                  fontWeight="500"
-                  color={textColorSecondary}
-                >
-                  Demo version
-                </Text>
-              </Box>
-              <Flex>
-                <Text
-                  me="10px"
-                  color={textColor}
-                  fontSize={{ base: "38px", md: "48px" }}
-                  lineHeight={{ base: "46px", md: "56px" }}
-                  fontWeight="800"
-                  letterSpacing="0px"
-                >
-                  Free
-                </Text>
-              </Flex>
-            </Box>
-            <Box
-              me={{ base: "20px", xl: "220px" }}
-              maxW={{ base: "100%", md: "100%", lg: "900px", "3xl": "900px" }}
-            >
-              <Text
-                color={textColor}
-                fontSize="md"
-                fontWeight="700"
-                letterSpacing="0px"
-                mb={{ base: "10px", lg: "10px" }}
-                mt={{ base: "10px", lg: "0px" }}
-              >
-                Open-source (MIT License)
-              </Text>
-              <Text
-                fontSize="sm"
-                fontWeight="500"
-                color={textColorSecondary}
-                letterSpacing="0px"
-                maxW={{ base: "100%", md: "100%", lg: "400px", "3xl": "400px" }}
-                mb={{ base: "20px", lg: "0px" }}
-              >
-                An open-source demo version of Horizon AI Template for
-                entry-level ChatGPT-based AI applications (Chat UI page).
-              </Text>
-            </Box>
-            <Link
-              display="flex"
-              p="0px"
-              m="0px"
-              mb={{ base: "30px", lg: "0px" }}
-              target="blank"
-              href="https://github.com/horizon-ui/chatgpt-ai-template"
-            >
-              <Button
-                overflow="hidden"
-                variant="no-hover"
-                border="1px solid"
-                borderColor="gray.300"
-                color={textColor}
-                h="25px"
-                display="flex"
-                alignItems="center"
-                justify="center"
-                justifyContent="space-between"
-                fontSize="xs"
-                borderRadius="12px"
-                bg="transparent"
-                my="auto"
-                p="0px"
-              >
-                <Flex
-                  bg="secondaryGray.400"
-                  align="center"
-                  justify="center"
-                  h="100%"
-                  ps="6px"
-                  pe="8px"
-                  fontWeight="bold"
-                >
-                  <Icon as={MdStarOutline} h="18px" w="18px" me="4px" />{" "}
-                  <Text>Star</Text>
-                </Flex>
-                <Text px="8px">{stars}</Text>
-              </Button>
-            </Link>
-            <TechCard
-              encharge
-              enchargeCode="feea97de-84a9-44f6-8f7b-7039b9917948"
-              buttonText={`Get started now`}
-              title="ChatGPT AI Template"
-              description="Start using Horizon AI Template with Chakra UI & NextJS for free!"
-              productCode="801685"
-            />
-          </Flex>
-        </Card>
+        </Text> */}
         <SimpleGrid
           w="100%"
           columns={{ base: "1", lg: "2" }}
@@ -585,18 +425,33 @@ export default function Pricing(props) {
                     lineHeight="100%"
                     letterSpacing="0px"
                     fontWeight="extrabold"
-                    // me="8px"
+                    me="8px"
                   >
-                    $79
+                    {version !== "nextchakra" && version !== "tailwindnext"
+                      ? "$49"
+                      : "$59"}
                   </Text>
-                  {/* <Flex direction="column" justify="center">
+                  <VSeparator
+                    display={{
+                      base: "flex",
+                      md: "none",
+                      lg: "flex",
+                      xl: "none",
+                    }}
+                    ms="8px"
+                    me="18px"
+                  />
+                  <Flex direction="column" justify="center">
                     <Text
                       textDecoration="line-through"
                       color={textColor}
                       fontWeight="500"
                       letterSpacing="0px"
                     >
-                      reg. {version !== "nextjs" ? "$189" : "$189"}
+                      reg.{" "}
+                      {version !== "nextchakra" && version !== "tailwindnext"
+                        ? "$79"
+                        : "$79"}
                     </Text>
                     <Text
                       color="green.500"
@@ -604,17 +459,38 @@ export default function Pricing(props) {
                       fontSize="md"
                       letterSpacing="0px"
                     >
-                      Limited discount!
+                      {version !== "nextchakra" && version !== "tailwindnext"
+                        ? "-38% discount"
+                        : "-38% discount"}
                     </Text>
-                  </Flex> */}
+                  </Flex>
                 </Flex>
-                <VSeparator mx="20px" />
-                <Flex direction="column" justify="center">
+                <VSeparator
+                  display={{
+                    base: "none",
+                    md: "flex",
+                    lg: "none",
+                    xl: "flex",
+                  }}
+                  ms="18px"
+                  me="18px"
+                  mx="20px"
+                />
+                <Flex
+                  display={{
+                    base: "none",
+                    md: "flex",
+                    lg: "none",
+                    xl: "flex",
+                  }}
+                  direction="column"
+                  justify="center"
+                >
                   <Text
                     color={textColor}
                     letterSpacing="0px"
                     fontWeight="700"
-                    fontSize="sm"
+                    fontSize={{ base: "xs", md: "sm" }}
                   >
                     one-time payment
                   </Text>
@@ -622,7 +498,7 @@ export default function Pricing(props) {
                     color={textColorVAT}
                     letterSpacing="0px"
                     fontWeight="500"
-                    fontSize="sm"
+                    fontSize={{ base: "xs", md: "sm" }}
                   >
                     VAT taxes included
                   </Text>
@@ -842,7 +718,7 @@ export default function Pricing(props) {
                     me="8px"
                   >
                     {/* {version !== "nextjs" ? "$189" : "$229"} */}
-                    $189
+                    $89
                   </Text>
 
                   <VSeparator
@@ -863,7 +739,7 @@ export default function Pricing(props) {
                       fontWeight="500"
                     >
                       {/* reg. {version !== "nextjs" ? "$790" : "$790"} */}
-                      reg. $790
+                      reg. $189
                     </Text>
                     <Text
                       color="green.500"
@@ -871,7 +747,7 @@ export default function Pricing(props) {
                       letterSpacing="0px"
                     >
                       {/* {version !== "nextjs" ? "-72% discount" : "-72% discount"} */}
-                      -76% discount
+                      -53% discount!
                     </Text>
                   </Flex>
                 </Flex>
@@ -879,7 +755,11 @@ export default function Pricing(props) {
                   display={{ base: "none", md: "flex", lg: "none", xl: "flex" }}
                   mx="20px"
                 />
-                <Flex direction="column" justify="center">
+                <Flex
+                  display={{ base: "none", md: "flex", lg: "none", xl: "flex" }}
+                  direction="column"
+                  justify="center"
+                >
                   <Text
                     color="white"
                     letterSpacing="0px"
@@ -1035,19 +915,6 @@ export default function Pricing(props) {
             </Flex>
           </Card>
         </SimpleGrid>
-        <Text
-          color={textColor}
-          fontSize={{ base: "md", md: "lg" }}
-          letterSpacing="0px"
-          fontWeight="700"
-          textAlign="center"
-          w={{ base: "100%", md: "80%", lg: "100%" }}
-          mb="30px"
-          mt="10px"
-        >
-          Looking for unlimited? Invest $60 more and unlock unlimited
-          possibilities with our Enterprise License! 👇
-        </Text>
         <Card
           borderRadius="16px"
           bg={card}
@@ -1096,9 +963,35 @@ export default function Pricing(props) {
                   fontWeight="800"
                   letterSpacing="0px"
                 >
-                  {/* {version !== "nextjs" ? "$249" : "$289"} */}
-                  $249
+                  {version !== "nextchakra" && version !== "tailwindnext"
+                    ? "$139"
+                    : "$159"}
                 </Text>
+                <Flex justify="center" direction="column">
+                  <Text
+                    fontSize="md"
+                    fontWeight="500"
+                    textDecoration="line-through"
+                    color={textColor}
+                    letterSpacing="0px"
+                  >
+                    reg.{" "}
+                    {version !== "nextchakra" && version !== "tailwindnext"
+                      ? "$249"
+                      : "$289"}
+                  </Text>
+                  <Text
+                    w="max-content"
+                    fontSize="md"
+                    fontWeight="500"
+                    letterSpacing="0px"
+                    color="green.500"
+                  >
+                    {version !== "nextchakra" && version !== "tailwindnext"
+                      ? "-45% discount"
+                      : "-45% discount"}
+                  </Text>
+                </Flex>
               </Flex>
             </Box>
             <Box

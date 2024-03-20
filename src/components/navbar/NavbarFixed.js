@@ -158,7 +158,7 @@ export default function AdminNavbar(props) {
           display={"flex"}
           alignItems="center"
           justifyContent={"center"}
-          href="/ai-template"
+          href="/chakra-ts-bundle"
         >
           {/* <Icon
             as={HorizonUI2Free}
@@ -173,17 +173,6 @@ export default function AdminNavbar(props) {
             w="179px"
             src={horizonuilogomain}
           />
-          <Badge
-            display={{ base: "flex", lg: "none", xl: "flex" }}
-            colorScheme="brand"
-            borderRadius="25px"
-            color="brand.500"
-            textTransform={"none"}
-            letterSpacing="0px"
-            px="8px"
-          >
-            AI Template
-          </Badge>
         </Link>
         <Flex>
           <Link
