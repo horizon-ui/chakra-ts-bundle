@@ -93,54 +93,6 @@ export default function Pricing() {
           </Text>
         </Flex>
         <Accordion w="80%" allowMultiple>
-          <AccordionItem borderTop="0px solid">
-            <Text>
-              <AccordionButton
-                py="25px"
-                _hover={{ bg: "none" }}
-                fontSize="md"
-                letterSpacing="0px"
-                fontWeight={"700"}
-                color={textColor}
-                _active={{ boxShadow: "none" }}
-                _focus={{ boxShadow: "none" }}
-              >
-                <Flex as="h2" flex="1" textAlign="left">
-                  Why do I need a premium AI website template?
-                </Flex>
-                <AccordionIcon />
-              </AccordionButton>
-            </Text>
-            <AccordionPanel pb={4}>
-              <SimpleGrid gap="40px" columns="1">
-                <Text
-                  color="gray.600"
-                  fontWeight={"500"}
-                  fontSize="md"
-                  letterSpacing="0px"
-                >
-                  An AI template kit like this one can help you more than you
-                  imagine, it helps you save coding hours, and it can boost your
-                  workflow 10-20X faster than ever before (it sounds crazy, we
-                  know). We used to ask ourselves this question all the time. We
-                  didn’t realize the power of an AI template until we built
-                  Horizon.
-                </Text>
-                <Text
-                  color="gray.600"
-                  fontWeight={"500"}
-                  fontSize="md"
-                  letterSpacing="0px"
-                >
-                  Horizon AI Template was built to have all those essential
-                  things. We’ve thought of everything you need for your AI &
-                  SaaS project, we adapted it to a trendy UI design, made a
-                  bunch of useful example pages, and wrapped all of this into
-                  one premium well-organized package.
-                </Text>
-              </SimpleGrid>
-            </AccordionPanel>
-          </AccordionItem>
           <AccordionItem>
             <Text>
               <AccordionButton
@@ -363,7 +315,7 @@ export default function Pricing() {
                 _focus={{ boxShadow: "none" }}
               >
                 <Flex as="h2" flex="1" textAlign="left">
-                  Can I use Horizon AI Template in an open source project?
+                  Can I use the included products in an open source project?
                 </Flex>
                 <AccordionIcon />
               </AccordionButton>
@@ -376,10 +328,10 @@ export default function Pricing() {
                   fontSize="md"
                   letterSpacing="0px"
                 >
-                  Yes, of course! You can use Horizon AI Template for an open
+                  Yes, of course! You can use the included products for an open
                   source project if you add in the Readme file (on Github) or in
                   the description of your product that you built the project
-                  using Horizon AI Template and a link to the product page.
+                  using the included products and a link to the product page.
                 </Text>
                 <Text
                   color="gray.600"
@@ -463,7 +415,7 @@ export default function Pricing() {
                 _focus={{ boxShadow: "none" }}
               >
                 <Flex as="h2" flex="1" textAlign="left">
-                  Is there a Figma version of Horizon AI Template?
+                  Do the included products come with Figma files?
                 </Flex>
                 <AccordionIcon />
               </AccordionButton>
@@ -476,8 +428,8 @@ export default function Pricing() {
                   fontSize="md"
                   letterSpacing="0px"
                 >
-                  Yes, there is a Figma file with all the designed pages from
-                  Horizon AI Template. For the moment, the Figma file comes
+                  Yes, each product has its own Figma file with all the designed
+                  pages from the product. For the moment, the Figma files comes
                   without a components library, which means that all pages are
                   designed separately.
                 </Text>
@@ -519,9 +471,9 @@ export default function Pricing() {
                   fontSize="md"
                   letterSpacing="0px"
                 >
-                  Once you have purchased Horizon AI Template, you will receive
-                  access to all future updates & announcements for free. We'll
-                  let you know via our{" "}
+                  Once you have purchased the bundle pack, you will receive
+                  access to all future updates & announcements of the included
+                  products for free. We'll let you know via our{" "}
                   <Link
                     isExternal
                     href="https://discord.gg/f6tEKFBd4m"
