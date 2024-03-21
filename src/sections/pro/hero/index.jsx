@@ -35,7 +35,7 @@ export default function Hero() {
         md: "110px",
         xl: "110px",
         "2xl": "110px",
-        "3xl": "10px",
+        "3xl": "110px",
       }}
       position="relative"
     >
